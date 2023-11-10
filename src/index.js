@@ -1,1 +1,5 @@
-console.log("Just testing this")
+import PageLoader from './pageLoad.js'
+
+const loader = new PageLoader("#content")
+
+loader.load()
