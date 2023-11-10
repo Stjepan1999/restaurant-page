@@ -1,13 +1,12 @@
+import createHeader from './header.js'
+
 class PageLoader {
     constructor(contentId) {
-        console.log(contentId)
         this.content = document.querySelector(contentId)
-        console.log(this.content)
     }
 
     load() {
-        const header = document.createElement('header')
-        header.textContent = "SAKURA RESTAURANT"
+        const header = createHeader();
 
 
         const main = document.createElement("main")
