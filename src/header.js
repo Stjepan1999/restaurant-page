@@ -1,11 +1,12 @@
 import './style.css'
+import logoImage from './images/logo.png'
 
 export default function createHeader() {
     const header = document.createElement("div");
     header.classList.add("header")
 
-    const logo = document.createElement("div");
-    logo.textContent = "SAKURA"
+    const logo = document.createElement("img");
+    logo.src = logoImage
     logo.classList.add("logo")
 
     const nav = document.createElement("div");
