@@ -1,18 +1,17 @@
-import createHeader from './header.js'
+import createHeader from './header.js';
+import createMain from './main-section.js';
 
 class PageLoader {
     constructor(contentId) {
-        this.content = document.querySelector(contentId)
+        this.content = document.querySelector(contentId);
     }
 
     load() {
         const header = createHeader();
+        const main = createMain();
 
-
-        const main = document.createElement("main")
-
-        this.content.appendChild(header)
-        this.content.appendChild(main)
+        this.content.appendChild(header);
+        this.content.appendChild(main);
     }
 
 }

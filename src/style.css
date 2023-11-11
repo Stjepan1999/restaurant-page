@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*HEADER STYLE*/
+.header {
+    height: 150px;
+    color: white;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.logo {
+    font-size: 2em;
+}
+
+.nav {
+    display: flex;
+    font-size: 1.5em;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+
+/*MAIN SECTION*/
+.main {
+    width: 100%;
+    background: url('./landing-image.jpg');
+    position: relative;
+}
+
+/*Text overlay on landing image*/
+.text-overlay {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    font-size: 36px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Section below landing image*/
+.landing-section {
+    background: black;
+}
+
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 50px;
+}
+
+
+.menu-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+    padding: 50px;
+}
+
+.menu-dish-image {
+    width: 250px;
+    height: auto;
+}
+
+.menu-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(31, 31, 31);
+    height: 100px;
+    color: white;
+    gap: 5px;
+}

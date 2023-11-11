@@ -14,6 +14,9 @@ export default function createHeader() {
     const home = document.createElement("a");
     home.textContent = "Home"
 
+    const menu = document.createElement("a");
+    menu.textContent = "Menu"
+
     const about = document.createElement("a");
     about.textContent = "About us"
 
@@ -23,6 +26,7 @@ export default function createHeader() {
 
     header.appendChild(logo)
     nav.appendChild(home)
+    nav.appendChild(menu)
     nav.appendChild(about)
     nav.appendChild(contact)
     header.appendChild(nav)
