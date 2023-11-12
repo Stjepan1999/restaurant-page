@@ -1,17 +1,15 @@
 import './style.css';
-import createFooter from './footer';
-import landingImage from './images/landing-image.jpg';
 import dishImage from './images/dish-image.jpg'
 
 export default function createMain() {
     const main = document.createElement("div");
     main.classList.add("main");
 
-    const landingImageElement = new Image();
-    landingImageElement.src = landingImage;
+    const landingImageElement = document.createElement("div")
+    landingImageElement.classList.add("landing-image")
 
     const overlayText = document.createElement("div");
-    overlayText.textContent = "SAKURA ASIAN RESTAURANT";
+    overlayText.innerHTML = "SAKURA <br> ASIAN RESTAURANT";
     overlayText.classList.add("text-overlay")
 
 
@@ -23,13 +21,14 @@ export default function createMain() {
     welcomeSection.classList.add("welcome-section");
 
     const welcomeTextHeading = document.createElement("h1");
-    welcomeTextHeading.textContent = "Welcome To Sakura";
+    welcomeTextHeading.textContent = "Welcome eeeTo Sakura";
 
     const welcomeTextParagraph = document.createElement("p")
     welcomeTextParagraph.textContent = "A warm place with tasty food for you and your friends."
 
     const aboutUsButton = document.createElement("button")
-    aboutUsButton.textContent = "About us"
+    aboutUsButton.textContent = "ABOUT US"
+    aboutUsButton.classList.add("landing-section-button")
 
 
     //Menu section
@@ -50,15 +49,9 @@ export default function createMain() {
     menuSectionParagraph.textContent = "Experience the art of Asian culinary mastery with our menu.";
 
     const menuButton = document.createElement("button");
-    menuButton.textContent = "See Our Menu";
-
-
-    //Contact section
-    const contactSection = document.createElement("div");
-    contactSection.classList.add("contact-section");
-
-    const contactSectionHeading = document.createElement("h1");
-    contactSectionHeading.textContent = "Contact us";
+    menuButton.textContent = "SEE OUR MENU";
+    menuButton.classList.add("landing-section-button")
+ 
 
     const contactSectionLocation = document.createElement("p");
     contactSectionLocation.textContent = "Bamboo Lane 35";
@@ -66,7 +59,6 @@ export default function createMain() {
     const contactSectionNumber = document.createElement("p");
     contactSectionNumber.textContent = "+12 345 6789";
 
-    const footer = createFooter();
 
     welcomeSection.appendChild(welcomeTextHeading)
     welcomeSection.appendChild(welcomeTextParagraph)
@@ -91,7 +83,6 @@ export default function createMain() {
     main.appendChild(landingImageElement);
     main.appendChild(overlayText);
     main.appendChild(landingSection);
-    main.appendChild(footer)
 
     return main
 }
