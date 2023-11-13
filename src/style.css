@@ -68,9 +68,13 @@ body {
 .landing-section-button {
     cursor: pointer;
     border-radius: 3px;
-    width: 50px;
-    height: 30px;
+    width: 100px;
+    height: 50px;
     background: grey;
+}
+
+.anchor {
+    font-size: 20px;
 }
 
 .welcome-section {
@@ -120,4 +124,21 @@ body {
     height: 100px;
     color: white;
     gap: 5px;
+}
+
+
+.menu {
+    background: url(./images/black-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+
+.menu-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 48px;
+    color: white;
+    margin: 0;
 }
