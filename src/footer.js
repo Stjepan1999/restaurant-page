@@ -1,6 +1,8 @@
 import './style.css';
 
 export default function createFooter() {
+    const content = document.getElementById("content")
+
     const footer = document.createElement("div")
     footer.classList.add("footer")
     footer.textContent = "Developed by " 
@@ -17,6 +19,5 @@ export default function createFooter() {
 
     footer.appendChild(githubName);
     footer.appendChild(githubRepository);
-
-    return footer
+    content.appendChild(footer)
 }

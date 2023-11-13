@@ -2,6 +2,8 @@ import './style.css'
 import logoImage from './images/logo.png'
 
 export default function createHeader() {
+    const content = document.getElementById("content")
+
     const header = document.createElement("div");
     header.classList.add("header")
 
@@ -13,16 +15,18 @@ export default function createHeader() {
     nav.classList.add("nav")
 
     const home = document.createElement("a");
-    home.textContent = "Home"
+    home.textContent = "HOME"
 
     const menu = document.createElement("a");
-    menu.textContent = "Menu"
-
+    menu.classList.add("anchor")
+    menu.textContent = "MENU"
+    menu.href = "./menu.js"
+    
     const about = document.createElement("a");
-    about.textContent = "About us"
+    about.textContent = "ABOUT US"
 
     const contact = document.createElement("a");
-    contact.textContent = "Contact"
+    contact.textContent = "CONTACT"
 
 
     header.appendChild(logo)
@@ -31,8 +35,5 @@ export default function createHeader() {
     nav.appendChild(about)
     nav.appendChild(contact)
     header.appendChild(nav)
-
-
-
-    return header
+    content.appendChild(header)
 }

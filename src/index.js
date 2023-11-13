@@ -1,5 +1,16 @@
-import PageLoader from './pageLoad.js'
+import createHeader from './header.js';
+import createMain from './main-section.js';
+import createFooter from './footer.js';
 
-const loader = new PageLoader("#content")
 
-loader.load()
+const content = document.getElementById("content");
+
+function home() {
+    content.innerHTML = "";
+    createHeader();
+    createMain();
+    createFooter();
+}
+
+
+home()

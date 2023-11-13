@@ -2,6 +2,8 @@ import './style.css';
 import dishImage from './images/dish-image.jpg'
 
 export default function createMain() {
+    const content = document.getElementById("content");
+
     const main = document.createElement("div");
     main.classList.add("main");
 
@@ -53,6 +55,14 @@ export default function createMain() {
     menuButton.classList.add("landing-section-button")
  
 
+
+    //Contact section
+    const contactSection = document.createElement("div");
+    contactSection.classList.add("contact-section");
+
+    const contactSectionHeading = document.createElement("h1");
+    contactSectionHeading.textContent = "Contact us";
+
     const contactSectionLocation = document.createElement("p");
     contactSectionLocation.textContent = "Bamboo Lane 35";
 
@@ -84,5 +94,5 @@ export default function createMain() {
     main.appendChild(overlayText);
     main.appendChild(landingSection);
 
-    return main
+    content.appendChild(main)
 }
