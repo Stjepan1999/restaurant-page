@@ -2,6 +2,7 @@ import createHeader from './header.js';
 import createMain from './main-section.js';
 import createFooter from './footer.js';
 import createMenu from './menu.js';
+import createAbout from './about.js';
 
 
 const content = document.getElementById("content");
@@ -16,9 +17,16 @@ function home() {
 
 function menu() {
     content.innerHTML = ""
-    createHeader()
-    createMenu()
-    createFooter()
+    createHeader();
+    createMenu();
+    createFooter();
+}
+
+function about() {
+    content.innerHTML = "";
+    createHeader();
+    createAbout();
+    createFooter();
 }
 
 
@@ -27,7 +35,7 @@ document.addEventListener("click", (e) => {
   
     if (target === "HOME") home();
     if (target === "MENU" || target === "SEE OUR MENU") menu();
-    if (target === "ABOUT") about();
+    if (target === "ABOUT US") about();
   });
 
 
