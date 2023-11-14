@@ -3,6 +3,7 @@ import createMain from './main-section.js';
 import createFooter from './footer.js';
 import createMenu from './menu.js';
 import createAbout from './about.js';
+import createContact from './contact.js';
 
 
 const content = document.getElementById("content");
@@ -29,6 +30,12 @@ function about() {
     createFooter();
 }
 
+function contact() {
+    content.innerHTML = "";
+    createHeader();
+    createContact();
+    createFooter();
+}
 
 document.addEventListener("click", (e) => {
     const target = e.target.innerText;
@@ -36,6 +43,7 @@ document.addEventListener("click", (e) => {
     if (target === "HOME") home();
     if (target === "MENU" || target === "SEE OUR MENU") menu();
     if (target === "ABOUT US") about();
+    if (target === "CONTACT") contact();
   });
 
 
