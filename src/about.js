@@ -28,7 +28,7 @@ export default function createAbout() {
 
 
     const imageSlider = document.createElement("div")
-    imageSlider.classList.add("imageSlider")
+    imageSlider.classList.add("image-slider")
 
     const imageContainer = document.createElement("div")
 
@@ -70,15 +70,14 @@ export default function createAbout() {
     }
 
     function showImage(n) {
-        const slides = document.querySelectorAll(".slide")
+        const slides = document.querySelectorAll(".slide");
         slideIndex = n;
-        console.log(slideIndex)
 
         for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none"
         }
         if (slideIndex < 0) {
-            slideIndex = slideIndex.length - 1
+            slideIndex = slides.length - 1
         }
         if (slideIndex > slides.length - 1) {
             slideIndex = 0
@@ -86,15 +85,5 @@ export default function createAbout() {
 
         slides[slideIndex].style.display = "block"
     }
-
-
-    
-
-
-
-    
-    
-
-    
 
 }
