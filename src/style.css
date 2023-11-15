@@ -132,6 +132,9 @@ body {
     background-size: cover;
     background-position: center;
     height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu-heading {
@@ -141,4 +144,42 @@ body {
     font-size: 48px;
     color: white;
     margin: 0;
+}
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 500px;
+    color: white;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.image-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slide {
+    width: 700px;
+    height: auto;
+    display: none;
+}
+
+.previous,
+.next {
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 32px;
+}
+
+.previous:hover,
+.next:hover {
+    color: lightgray;
 }

@@ -18,10 +18,8 @@ export default function createHeader() {
     home.textContent = "HOME"
 
     const menu = document.createElement("a");
-    menu.classList.add("anchor")
     menu.textContent = "MENU"
-    menu.href = "./menu.js"
-    
+
     const about = document.createElement("a");
     about.textContent = "ABOUT US"
 

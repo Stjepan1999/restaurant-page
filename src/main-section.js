@@ -23,7 +23,7 @@ export default function createMain() {
     welcomeSection.classList.add("welcome-section");
 
     const welcomeTextHeading = document.createElement("h1");
-    welcomeTextHeading.textContent = "Welcome eeeTo Sakura";
+    welcomeTextHeading.textContent = "Welcome To Sakura";
 
     const welcomeTextParagraph = document.createElement("p")
     welcomeTextParagraph.textContent = "A warm place with tasty food for you and your friends."
