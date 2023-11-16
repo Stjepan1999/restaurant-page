@@ -72,7 +72,7 @@ export default function createAbout() {
     function showImage(n) {
         const slides = document.querySelectorAll(".slide");
         slideIndex = n;
-
+        
         for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none"
         }
