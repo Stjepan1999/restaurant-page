@@ -3,13 +3,13 @@
 With this project, I learned how to use Webpack bundler, and I built the whole webpage structure using JavaScript.
 
 ##Home Page
-![Home Page](https://imgur.com/DAfxhZs)
+![Home Page](https://i.imgur.com/DAfxhZs.png)
 
 ##Menu Page
-![Menu Page](https://imgur.com/Nj79Jna)
+![Menu Page](https://i.imgur.com/Nj79Jna.png)
 
 ##About Page
-![About Page](https://imgur.com/lMRkTIf)
+![About Page](https://i.imgur.com/lMRkTIf.png)
 
 ##Contact Page
-![Contact Page](https://imgur.com/8XNt1Wl)
+![Contact Page](https://i.imgur.com/8XNt1Wl.png)
