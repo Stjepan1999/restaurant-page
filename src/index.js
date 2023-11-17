@@ -1,5 +1,5 @@
 import createHeader from './header.js';
-import createMain from './main-section.js';
+import createHome from './home.js';
 import createFooter from './footer.js';
 import createMenu from './menu.js';
 import createAbout from './about.js';
@@ -11,7 +11,7 @@ const content = document.getElementById("content");
 function home() {
     content.innerHTML = "";
     createHeader();
-    createMain();
+    createHome();
     createFooter();
 }
 

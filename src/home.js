@@ -44,14 +44,11 @@ export default function createMain() {
     const contactSection = document.createElement("div");
     contactSection.classList.add("contact-section");
 
-    const contactSectionHeading = document.createElement("h1");
-    contactSectionHeading.textContent = "CONTACT US";
-
-    const contactSectionLocation = document.createElement("p");
-    contactSectionLocation.textContent = "Bamboo Lane 35";
-
-    const contactSectionNumber = document.createElement("p");
-    contactSectionNumber.textContent = "+12 345 6789";
+    const contactInfo = `
+    <h2>CONTACT US</h2>
+    <p>LOCATION: Bamboo Lane 35</p>
+    <p>PHONE: +12 345 6789</p>
+    <p>EMAIL: sakura@info.com</p>`
 
 
     welcomeSection.appendChild(welcomeTextHeading)
@@ -64,9 +61,7 @@ export default function createMain() {
 
     menuSection.appendChild(menuTextSection)
 
-    contactSection.appendChild(contactSectionHeading)
-    contactSection.appendChild(contactSectionLocation);
-    contactSection.appendChild(contactSectionNumber)
+    contactSection.innerHTML += contactInfo
 
 
     landingSection.appendChild(welcomeSection)
