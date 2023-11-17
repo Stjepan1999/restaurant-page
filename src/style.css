@@ -6,7 +6,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 } 
 
-/*HEADER STYLE*/
+/*HEADER*/
 .header {
     height: 150px;
     color: white;
@@ -15,36 +15,46 @@ body {
     align-items: center;
     justify-content: space-around;
 }
-
 .logo {
     height: 150px;
 }
-
 .nav {
     display: flex;
     font-size: 1.5em;
     justify-content: space-around;
     gap: 50px;
 }
-
 .nav > a {
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
 }
-
 .nav > a:hover {
     transform: scale(1.3);
 }
 
-/*Home page*/
+/*Background on every page*/
+.background,
 .landing-section {
     background: url(./images/black-background.jpg);
-    margin: 0;
-    border: none;
-    background-size: cover;
+    background-size: 100% 1000px;
     background-position: center;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+
+/*Home page*/
+.landing-section {
+    gap: 10px;
+}
+.landing-image {
+    width: auto;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
 .landing-section-button {
     cursor: pointer;
     border-radius: 3px;
@@ -54,11 +64,6 @@ body {
     background: #F13223;
     color: white;
 }
-
-.anchor {
-    font-size: 20px;
-}
-
 .welcome-section {
     display: flex;
     flex-direction: column;
@@ -66,8 +71,6 @@ body {
     justify-content: center;
     color: white;
 }
-
-
 .menu-section {
     display: flex;
     align-items: center;
@@ -75,20 +78,16 @@ body {
     gap: 50px;
     color: white;
 }
-
 .menu-dish-image {
     width: 250px;
     height: auto;
 }
-
 .menu-text-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-
 .contact-section {
     display: flex;
     flex-direction: column;
@@ -109,16 +108,6 @@ body {
 }
 
 
-.menu,
-.home {
-    background: url(./images/black-background.jpg);
-    background-size: 100% 1000px;
-    background-position: center;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 .menu-heading {
@@ -166,4 +155,13 @@ body {
 .previous:hover,
 .next:hover {
     color: lightgray;
+}
+
+.menu-image {
+    width: 200px;
+    height: 300px;
+}
+
+.menu-image:hover {
+    opacity: 0.6;
 }

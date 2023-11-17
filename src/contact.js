@@ -4,7 +4,7 @@ export default function createContact() {
     const content = document.getElementById("content")
 
     const background = document.createElement("div")
-    background.classList.add("menu")
+    background.classList.add("background")
 
     const contactDiv = document.createElement("div");
     contactDiv.classList.add("about-page")

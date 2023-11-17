@@ -1,29 +1,25 @@
 import './style.css';
-import dishImage from './images/dish-image.jpg'
+import restaurantImage from './images/about-3.jpg'
 
 export default function createMain() {
     const content = document.getElementById("content");
 
-    const main = document.createElement("div");
-    main.classList.add("main");
-
     const landingSection = document.createElement("div")
-    landingSection.classList.add("home")
+    landingSection.classList.add("landing-section")
 
     //Welcome section
     const welcomeSection = document.createElement("div");
     welcomeSection.classList.add("welcome-section");
 
     const welcomeTextHeading = document.createElement("h1");
-    welcomeTextHeading.textContent = "Welcome To Sakura";
+    welcomeTextHeading.textContent = "WELCOME TO SAKURA";
 
     const welcomeTextParagraph = document.createElement("p")
     welcomeTextParagraph.textContent = "A warm place with tasty food for you and your friends."
 
-    const aboutUsButton = document.createElement("button")
-    aboutUsButton.textContent = "ABOUT US"
-    aboutUsButton.classList.add("landing-section-button")
-
+    const landingImage = document.createElement("img");
+    landingImage.src = restaurantImage;
+    landingImage.classList.add("landing-image");
 
     //Menu section
     const menuSection = document.createElement("div")
@@ -33,7 +29,7 @@ export default function createMain() {
     menuTextSection.classList.add("menu-text-section")
 
     const menuSectionHeading = document.createElement("h1");
-    menuSectionHeading.textContent = "Menu"
+    menuSectionHeading.textContent = "MENU"
 
     const menuSectionParagraph = document.createElement("p");
     menuSectionParagraph.textContent = "Experience the art of Asian culinary mastery with our menu.";
@@ -49,7 +45,7 @@ export default function createMain() {
     contactSection.classList.add("contact-section");
 
     const contactSectionHeading = document.createElement("h1");
-    contactSectionHeading.textContent = "Contact us";
+    contactSectionHeading.textContent = "CONTACT US";
 
     const contactSectionLocation = document.createElement("p");
     contactSectionLocation.textContent = "Bamboo Lane 35";
@@ -60,7 +56,7 @@ export default function createMain() {
 
     welcomeSection.appendChild(welcomeTextHeading)
     welcomeSection.appendChild(welcomeTextParagraph)
-    welcomeSection.appendChild(aboutUsButton)
+    welcomeSection.appendChild(landingImage)
 
     menuTextSection.appendChild(menuSectionHeading)
     menuTextSection.appendChild(menuSectionParagraph)
@@ -77,7 +73,5 @@ export default function createMain() {
     landingSection.appendChild(menuSection)
     landingSection.appendChild(contactSection)
 
-    main.appendChild(landingSection);
-
-    content.appendChild(main)
+    content.appendChild(landingSection)
 }

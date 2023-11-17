@@ -10,7 +10,7 @@ export default function createAbout() {
     const content = document.getElementById("content")
 
     const background = document.createElement("div")
-    background.classList.add("menu")
+    background.classList.add("background")
 
     const aboutPage = document.createElement("div")
     aboutPage.classList.add("about-page")
