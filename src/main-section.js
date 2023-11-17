@@ -8,7 +8,7 @@ export default function createMain() {
     main.classList.add("main");
 
     const landingSection = document.createElement("div")
-    landingSection.classList.add("menu")
+    landingSection.classList.add("home")
 
     //Welcome section
     const welcomeSection = document.createElement("div");
@@ -28,10 +28,6 @@ export default function createMain() {
     //Menu section
     const menuSection = document.createElement("div")
     menuSection.classList.add("menu-section")
-
-    const menuDishImage = document.createElement("img");
-    menuDishImage.src = dishImage;
-    menuDishImage.classList.add("menu-dish-image")
 
     const menuTextSection = document.createElement("div")
     menuTextSection.classList.add("menu-text-section")
@@ -70,7 +66,6 @@ export default function createMain() {
     menuTextSection.appendChild(menuSectionParagraph)
     menuTextSection.appendChild(menuButton)
 
-    menuSection.appendChild(menuDishImage)
     menuSection.appendChild(menuTextSection)
 
     contactSection.appendChild(contactSectionHeading)
