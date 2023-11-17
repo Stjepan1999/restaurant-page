@@ -29,32 +29,9 @@ body {
 
 
 /*MAIN SECTION*/
-.main {
-    width: 100%;
-    position: relative;
-}
+
 
 /*Text overlay on landing image*/
-.text-overlay {
-    position: absolute;
-    top: 20%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 10px;
-    font-size: 48px;
-    text-align: center;
-}
-
-.landing-image {
-    max-width: 100%;
-    height: 1000px;
-    background: url(./images/landing-image.jpg);
-    background-size: cover;
-    background-position: center;
-   
-}
 
 /*Section below landing image*/
 .landing-section {
@@ -129,7 +106,7 @@ body {
 
 .menu {
     background: url(./images/black-background.jpg);
-    background-size: cover;
+    background-size: 100% 1000px;
     background-position: center;
     height: 1000px;
     display: flex;

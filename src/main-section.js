@@ -7,16 +7,8 @@ export default function createMain() {
     const main = document.createElement("div");
     main.classList.add("main");
 
-    const landingImageElement = document.createElement("div")
-    landingImageElement.classList.add("landing-image")
-
-    const overlayText = document.createElement("div");
-    overlayText.innerHTML = "SAKURA <br> ASIAN RESTAURANT";
-    overlayText.classList.add("text-overlay")
-
-
     const landingSection = document.createElement("div")
-    landingSection.classList.add("landing-section")
+    landingSection.classList.add("menu")
 
     //Welcome section
     const welcomeSection = document.createElement("div");
@@ -90,8 +82,6 @@ export default function createMain() {
     landingSection.appendChild(menuSection)
     landingSection.appendChild(contactSection)
 
-    main.appendChild(landingImageElement);
-    main.appendChild(overlayText);
     main.appendChild(landingSection);
 
     content.appendChild(main)
